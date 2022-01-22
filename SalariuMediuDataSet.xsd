@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SalariuMediuDataSet" targetNamespace="http://tempuri.org/SalariuMediuDataSet.xsd" xmlns:mstns="http://tempuri.org/SalariuMediuDataSet.xsd" xmlns="http://tempuri.org/SalariuMediuDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CompanieConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CompanieConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Practica.Properties.Settings.GlobalReference.Default.CompanieConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SalariuMediuTableAdapter" GeneratorDataComponentClassName="SalariuMediuTableAdapter" Name="SalariuMediu" UserDataComponentName="SalariuMediuTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CompanieConnectionString (Settings)" DbObjectName="Companie.dbo.SalariuMediu" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Salariu_Mediu FROM dbo.SalariuMediu</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Salariu_Mediu" DataSetColumn="Salariu_Mediu" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SalariuMediuDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="SalariuMediuDataSet" msprop:Generator_UserDSName="SalariuMediuDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SalariuMediu" msprop:Generator_TableClassName="SalariuMediuDataTable" msprop:Generator_TableVarName="tableSalariuMediu" msprop:Generator_TablePropName="SalariuMediu" msprop:Generator_RowDeletingName="SalariuMediuRowDeleting" msprop:Generator_RowChangingName="SalariuMediuRowChanging" msprop:Generator_RowEvHandlerName="SalariuMediuRowChangeEventHandler" msprop:Generator_RowDeletedName="SalariuMediuRowDeleted" msprop:Generator_UserTableName="SalariuMediu" msprop:Generator_RowChangedName="SalariuMediuRowChanged" msprop:Generator_RowEvArgName="SalariuMediuRowChangeEvent" msprop:Generator_RowClassName="SalariuMediuRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Salariu_Mediu" msprop:Generator_ColumnVarNameInTable="columnSalariu_Mediu" msprop:Generator_ColumnPropNameInRow="Salariu_Mediu" msprop:Generator_ColumnPropNameInTable="Salariu_MediuColumn" msprop:Generator_UserColumnName="Salariu_Mediu" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
